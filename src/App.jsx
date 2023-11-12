@@ -50,7 +50,7 @@ function App() {
 
       </Grid>
 
-      <Grid container columnSpacing={4} flexWrap={"wrap"} sx={{width:"100%"}}>
+      <Grid container flexWrap={"wrap"} sx={{ width: "100%" }}>
         <Grid item xs={12} md={4} lg={3}>
           <Stats />
         </Grid>
@@ -59,11 +59,10 @@ function App() {
         </Grid>
       </Grid>
 
-      <Grid container sx={{width:"100%"}}>
-      <Grid item xs={12} lg={4}><Location/></Grid>
-      <Grid item xs={12} lg={4}><ConversionRate/></Grid>
-      <Grid item xs={12} lg={4}><WebsiteAnalytics/></Grid>
-
+      <Grid container sx={{ width: "100%" }}>
+        <Grid item xs={12} lg={4}><Location /></Grid>
+        <Grid item xs={12} lg={4}><ConversionRate /></Grid>
+        <Grid item xs={12} lg={4}><WebsiteAnalytics /></Grid>
       </Grid>
 
     </Box>

@@ -46,7 +46,7 @@ const App = () => {
     const [series, setSeries] = useState([70, 20, 10])
 
     return (
-        <Box sx={{ mt:4,  mr:{md:4, sm:0}, borderRadius: "10px",height:{md:"100%", lg:"80%"}, boxShadow: "2px 2px 4px 0 rgba(15, 10, 15, 0.5), -2px -2px 4px 0 rgba(41, 82, 113, 0.5), inset 0 1px 250px 0 rgba(5, 16, 24, 0.1)", backgroundColor: "rgba(9, 24, 35, 0.05)", color: "white", p: 2 }}>
+        <Box sx={{ mt:4,  mr:{lg:4, sm:0}, borderRadius: "10px", boxShadow: "2px 2px 4px 0 rgba(15, 10, 15, 0.5), -2px -2px 4px 0 rgba(41, 82, 113, 0.5), inset 0 1px 250px 0 rgba(5, 16, 24, 0.1)", backgroundColor: "rgba(9, 24, 35, 0.05)", color: "white", p: 2 }}>
 
             <Typography variant="h5" sx={{
                 color: "white",
