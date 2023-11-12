@@ -27,7 +27,7 @@ const App = () => {
             foreColor: '#a9a9a9',
             background: "rgba(9, 24, 35, 0.05)",
             stacked: true,
-            
+
         },
         plotOptions: {
             bar: {
@@ -35,20 +35,20 @@ const App = () => {
                 columnWidth: '28%',
             },
         },
-        grid:{
-            show:true,
+        grid: {
+            show: true,
             strokeDashArray: 4,
-            color:"#47416c",
+            color: "#47416c",
             xaxis: {
                 lines: {
                     show: true,
                 }
-            },   
+            },
             yaxis: {
                 lines: {
                     show: false
                 }
-            },  
+            },
         },
 
         // Stroke
@@ -88,22 +88,22 @@ const App = () => {
     ])
 
     return (
-        <Box sx={{mt:4, mr:{md:4, sm:0}, borderRadius:"10px", boxShadow: "2px 2px 4px 0 rgba(15, 10, 15, 0.5), -2px -2px 4px 0 rgba(41, 82, 113, 0.5), inset 0 1px 250px 0 rgba(5, 16, 24, 0.1)", backgroundColor:"rgba(9, 24, 35, 0.05)", color:"white", p:2 }}>
+        <Box sx={{ mt: 4, mr: { md: 4, sm: 0 }, borderRadius: "10px", boxShadow: "2px 2px 4px 0 rgba(15, 10, 15, 0.5), -2px -2px 4px 0 rgba(41, 82, 113, 0.5), inset 0 1px 250px 0 rgba(5, 16, 24, 0.1)", backgroundColor: "rgba(9, 24, 35, 0.05)", color: "white", p: 2 }}>
 
-             <Typography variant="h5" sx={{
-                    color: "white",
-                    fontWeight: "bold",
-                    ml:2
-                }}>
-                    Location
-                </Typography>
+            <Typography variant="h5" sx={{
+                color: "white",
+                fontWeight: "bold",
+                ml: 2
+            }}>
+                Location
+            </Typography>
             <Chart
-                        options={options}
-                        series={series}
-                        type="line"
-                        height="400"
-                        width="100%"
-                    />
+                options={options}
+                series={series}
+                type="line"
+                height="400"
+                width="100%"
+            />
         </Box>
     )
 }

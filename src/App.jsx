@@ -59,10 +59,10 @@ function App() {
         </Grid>
       </Grid>
 
-      <Grid container columnSpacing={4} sx={{width:"100%"}}>
-      <Grid item lg={4}><Location/></Grid>
-      <Grid item lg={4}><ConversionRate/></Grid>
-      <Grid item lg={4}><WebsiteAnalytics/></Grid>
+      <Grid container sx={{width:"100%"}}>
+      <Grid item xs={12} lg={4}><Location/></Grid>
+      <Grid item xs={12} lg={4}><ConversionRate/></Grid>
+      <Grid item xs={12} lg={4}><WebsiteAnalytics/></Grid>
 
       </Grid>
 
