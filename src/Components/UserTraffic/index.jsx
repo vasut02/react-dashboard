@@ -90,7 +90,7 @@ const App = () => {
     return (
         <Box sx={{ ml: { sm: 0, md: 4 }, borderRadius: "10px", boxShadow: "2px 2px 4px 0 rgba(15, 10, 15, 0.5), -2px -2px 4px 0 rgba(41, 82, 113, 0.5), inset 0 1px 250px 0 rgba(5, 16, 24, 0.1)", backgroundColor: "rgba(9, 24, 35, 0.05)", color: "white", p: 2 }}>
 
-            <Box sx={{display:"flex", justifyContent:"space-between", mb:2, alignItems:"flex-start"}}>
+            <Box sx={{display:"flex",flexDirection:{xs:"column", sm:"row"}, justifyContent:"space-between", mb:2, alignItems:"flex-start"}}>
 
 
                 <Typography variant="h5" sx={{
@@ -99,7 +99,7 @@ const App = () => {
                     ml: 2,
                 }}>User Traffic
                 </Typography>
-                <Box sx={{ minWidth: 120, }}>
+                <Box sx={{ minWidth: 120,mt:{xs:2, sm:0}, ml:{xs:2, sm:0},}}>
                     <FormControl sx={{ border: "#8f9bb7", '& fieldset': { borderColor: '#747e9a', borderRadius:'10px' }, }} fullWidth>
                         <Select
                             variant="outlined"
