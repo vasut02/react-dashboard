@@ -31,7 +31,7 @@ const App = () => {
         chart: {
             toolbar: { show: false },
             zoom: { enabled: false },
-            foreColor: 'white',
+            foreColor: '#a9a9a9',
             background: "rgba(9, 24, 35, 0.05)"
         },
         plotOptions: {
@@ -39,6 +39,11 @@ const App = () => {
                 borderRadius: 5,
                 columnWidth: '100%',
             },
+        },
+        grid: {
+            show: true,
+            strokeDashArray: 4,
+            color: "#47416c",
         },
 
         // Stroke
