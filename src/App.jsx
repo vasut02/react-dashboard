@@ -51,10 +51,10 @@ function App() {
       </Grid>
 
       <Grid container columnSpacing={4} flexWrap={"wrap"} sx={{width:"100%"}}>
-        <Grid item md={4} lg={3}>
+        <Grid item xs={12} md={4} lg={3}>
           <Stats />
         </Grid>
-        <Grid item md={8} lg={9}>
+        <Grid item xs={12} md={8} lg={9}>
           <UserTraffic />
         </Grid>
       </Grid>
