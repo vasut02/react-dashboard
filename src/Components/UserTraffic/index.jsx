@@ -1,4 +1,4 @@
-import { Box, Tab, Tabs, Typography } from '@mui/material'
+import { Box, FormControl, MenuItem, Select, Tab, Tabs, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import Chart from "react-apexcharts";
 
@@ -88,14 +88,32 @@ const App = () => {
     ])
 
     return (
-        <Box sx={{ml:{sm:0, md:4}, borderRadius: "10px", boxShadow: "2px 2px 4px 0 rgba(15, 10, 15, 0.5), -2px -2px 4px 0 rgba(41, 82, 113, 0.5), inset 0 1px 250px 0 rgba(5, 16, 24, 0.1)", backgroundColor: "rgba(9, 24, 35, 0.05)", color: "white", p: 2 }}>
+        <Box sx={{ ml: { sm: 0, md: 4 }, borderRadius: "10px", boxShadow: "2px 2px 4px 0 rgba(15, 10, 15, 0.5), -2px -2px 4px 0 rgba(41, 82, 113, 0.5), inset 0 1px 250px 0 rgba(5, 16, 24, 0.1)", backgroundColor: "rgba(9, 24, 35, 0.05)", color: "white", p: 2 }}>
 
-            <Typography variant="h5" sx={{
-                color: "white",
-                fontWeight: "bold",
-                ml: 2,
-            }}>User Traffic
-            </Typography>
+            <Box sx={{display:"flex", justifyContent:"space-between", mb:2, alignItems:"flex-start"}}>
+
+
+                <Typography variant="h5" sx={{
+                    color: "white",
+                    fontWeight: "bold",
+                    ml: 2,
+                }}>User Traffic
+                </Typography>
+                <Box sx={{ minWidth: 120, }}>
+                    <FormControl sx={{ border: "#8f9bb7", '& fieldset': { borderColor: '#747e9a', borderRadius:'10px' }, }} fullWidth>
+                        <Select
+                            variant="outlined"
+                            sx={{ color: "#8f9bb7", '& .MuiSelect-root': { borderColor: 'red' }, '& .MuiSelect-icon': { color: '#747e9a' } }}
+                            value={10}
+                        >
+                            <MenuItem value={10}>Current Year</MenuItem>
+                            <MenuItem value={20}>Current Year</MenuItem>
+                            <MenuItem value={30}>Current Year</MenuItem>
+                        </Select>
+                    </FormControl>
+                </Box>
+
+            </Box>
 
             <Chart
                 options={options}

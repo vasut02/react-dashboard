@@ -35,10 +35,11 @@ function App() {
           </Typography>
         </Grid>
         <Grid item>
-          <Box sx={{ minWidth: 120, }}>
-            <FormControl sx={{ border: "#8f9bb7" }} fullWidth>
+          <Box sx={{ mt:{xs:4, sm:0}, minWidth: 120, }}>
+            <FormControl sx={{ border: "#8f9bb7", '& fieldset': {borderColor:'#747e9a',  borderRadius:'10px' }, }} fullWidth>
               <Select
-                sx={{ color: "#8f9bb7" }}
+                variant="outlined"
+                sx={{ color: "#8f9bb7", '& .MuiSelect-root': {borderColor:'red', }, '& .MuiSelect-icon':{color:'#747e9a'} }}
                 value={10}
               >
                 <MenuItem value={10}>User</MenuItem>
