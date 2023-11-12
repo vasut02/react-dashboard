@@ -101,6 +101,7 @@ const App = () => {
                 color: "#aebbda",
                 fontWeight: "bold",
                 ml: 2,
+                fontFamily: "Inter",
                 mb: 5
             }}>
                 Based on your performance

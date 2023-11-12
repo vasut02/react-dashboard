@@ -25,6 +25,7 @@ const Stats = () => {
                     color: "#8c89b4",
                     fontWeight: "bold",
                     mb: 1,
+                    fontFamily:"Inter"
 
                 }}>
                     Active Users

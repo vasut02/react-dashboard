@@ -28,7 +28,8 @@ function App() {
             User Analytics
           </Typography>
           <Typography variant="p" sx={{
-            mb: 5, color: "#aebbda"
+            mb: 5, color: "#aebbda",
+            fontFamily:"Inter"
           }}>
             Lorem ipsum dolor sit consectetur.
           </Typography>
